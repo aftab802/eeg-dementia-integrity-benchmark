@@ -50,9 +50,9 @@ data, `train_test_subject_overlap` (0 under the leakage-safe protocol).
 
 | Result in the paper | Value | Source of the number | Re-run with this repository? |
 |---|---|---|---|
-| Tuned XGBoost, 39 features | 61.44 % | Original code not in the archive | Reimplemented in `run_label_correction.py`; **must be re-run** |
+| Tuned XGBoost, 39 features | 61.44 % | Original run | **Re-run: 61.50 % best_score_, nested CV 60.26 ± 5.81 %** |
 | LEAD-EEG ensemble | 76.14 % | Original code not in the archive; cohort accession pending | Reimplemented in `run_lead_eeg.py`; **needs the cohort** |
-| Cost-sensitive XGBoost (notebook) | 65.91 % (5-fold) / 66.67 % (hold-out) | Original notebook, output preserved | Same protocol in `run_subject_vote_xgb.py` |
+| Cost-sensitive XGBoost (notebook) | 65.91 % (5-fold) / 66.67 % (hold-out) | Original notebook, output preserved | **Re-run: 67.05 % / 66.67 %** |
 
 ## Points to resolve against the manuscript
 
